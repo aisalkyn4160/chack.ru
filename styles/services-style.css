@@ -1,0 +1,23 @@
+.services{
+    padding: 40px 0 80px;
+}
+.service-content{
+    padding: 85px 25px;
+    color: #FAFAFA;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.services p{
+    max-width: 295px;
+    margin: 10px 0 15px ;
+}
+.services button{
+    margin: auto auto 0 auto;
+    color: #FAFAFA !important;
+
+}

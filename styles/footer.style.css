@@ -1,0 +1,59 @@
+.footer-top{
+    padding: 45px 0 75px;
+    color: rgba(62, 59, 57, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 150px;
+}
+.footer-top .nav-menu{
+}
+.footer-top .nav-menu >ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+.footer-top .nav-menu ul li{
+    
+}
+.footer-top .dropdown-menu{
+    top: 0;
+    z-index: 100;
+    left: 110px;
+}
+.footer-top .contacts{
+    max-width: 195px;
+    color: rgba(62, 59, 57, 1);
+    flex-direction: column;
+}
+
+.footer-bottom{
+    padding: 25px 0;
+    border-top: 1px solid rgba(62, 59, 57, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(62, 59, 57, 0.4);
+    font-size: 15px;
+}
+
+.footer-bottom .socials a{
+    border: 1.5px solid rgba(62, 59, 57, 0.15);
+}
+.footer-bottom .socials a:hover{
+    background: rgba(62, 59, 57, .1);
+}
+.development{
+    display: flex;
+    font-size: 12px;
+    gap: 15px;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0em;
+}
+.development p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}

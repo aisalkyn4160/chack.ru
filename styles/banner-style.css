@@ -1,0 +1,27 @@
+.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 235px 0 175px;
+}
+.banner-info{
+    width: max-content;
+    padding: 70px 65px 70px 55px;
+    background: rgba(250, 250, 250, 0.8);
+    border-radius: 10px;
+    border-top: 3px solid rgba(255, 255, 255, 0.8);
+    border-left: 3px solid  rgba(255, 255, 255, 0.8);
+}
+
+.banner-info h2{
+    max-width: 440px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgba(244, 171, 30, 1);
+}
+.banner-info p{
+    max-width: 466px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+

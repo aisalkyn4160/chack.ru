@@ -1,0 +1,60 @@
+.management{
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+.breadcrumb{
+    margin-bottom: 20px;
+}
+.breadcrumb ul{
+    display: flex;
+    gap: 10px;
+    color: rgba(17, 17, 17, 0.5);
+}
+.breadcrumb ul li.active{
+    color: rgba(17, 17, 17, 1);
+
+}
+.managers-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.manager-card{
+    width: 100%;
+    border: 1px solid rgba(62, 59, 57, 0.15);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.manager-img{
+    width: 209px;
+    border-radius: 10px;
+}
+
+.manager-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.manager-card h3{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.manager-card h3 span{
+    display: block;
+    color: rgba(244, 171, 30, 1);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.manager-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+

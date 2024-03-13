@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1230">
+    <title>chak.ru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="header">
+            <div class="container">
+                <a class="logo" href="/">
+                    <img src="./assets/icons/logo.png" alt="logo">
+                    <p><span>ГБПОУ НСО</span> Чулымский аграрный колледж</p>
+                </a>
+                <div class="header-info">   
+                    <div class="header-top">
+                        <form class="search-form">
+                            <button>
+                                <img src="./assets/icons/search-vector.png" alt="search">
+                            </button>
+                            <input type="text" placeholder="Поиск по сайту">
+                        </form>
+                        <ul class="contacts">
+                            <li><a href="">Чулым, ул. Мелиораторов, 20</a></li>
+                            <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                            <li><a class="mail" href="mailto:info@mail.com">info@mail.com</a></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="">
+                                <img src="./assets/icons/vk.png" alt="vk">  
+                                <img src="./assets/icons/vk bl.png" alt="vk">
+                            </a></li>
+                            <li><a href="">
+                                <img src="./assets/icons/telegram.png" alt="tg">
+                                <img src="./assets/icons/telegram bl.png" alt="tg">
+                            </a></li>
+                            <li><a href="">
+                                <img src="./assets/icons/whatsapp.png" alt="wh">
+                                <img src="./assets/icons/whatsapp bl.png" alt="wh">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="header-bottom">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="#">О колледже</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/management.html">Руководство</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Сведения об организации</a></li>
+                                <li><a href="#">Пресс-центр</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                        <li><a href="#">Вопрос-Ответ</a></li>
+                                        <li><a href="#">Фотогалерея</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Абитуриентам</a></li>
+                                <li><a href="#">Студентам</a></li>
+                                <li>
+                                    <div class="burger-menu">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Преподавателям </a></li>
+                                            <li><a href="/contact-form.html">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <button class="green-btn">Версия для слабовидящих</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="banner" style="background:linear-gradient(to top, rgba(255,255,255,0)50%, rgba(40,39,38,0.8)100%), url(./assets/imgs/combine-harvesting-wheat-field\ 1.jpg) no-repeat center center /cover;">
+                <div class="container">
+                    <div class="banner-info">
+                        <h2>Чулымский аграрный колледж</h2>
+                        <p>Проводится прием на очную форму обучения в 2024-2025 учебном году на базе основного общего образования 
+                            (9 классов)</p>
+                        <a href="/">
+                            <button class="btn">Узнать подробнее</button>
+                        </a>
+                        <a href="/contact-form.html">
+                            <button class="btn apply-btn">Оставить заявку 
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <div class="about-wrapper">
+                        <div class="about-info">
+                            <h2>О колледже</h2>
+                            <p>История колледжа начинается с образования в г. Чулыме «Сельского профессионально-технического училища №23» 09 декабря 1975 года.</p>
+                            <p>19 октября 1984 года оно было переименовано в «Среднее профессионально-техническое училище №93». В период 1975-2008 годы училищем руководил Александр Васильевич Лихоманов – Заслуженный учитель РФ, отличник профтехобразования, почетный гражданин Новосибирской области, награжден медалью ордена "За заслуги перед Отечеством" 2 степени.</p>
+                            <p>10 сентября 2012 года училище получило статус лицея – Государственное бюджетное образовательное учреждение начального профессионального образования Новосибирской области «Чулымский межрайонный аграрный лицей». В 2023 году лицей получает статус колледжа.</p>
+                            <button class="btn">Узнать подробнее</button>
+                        </div>
+                        <div class="about-imgs">
+                            <img class="about-img1" src="./assets/imgs/about 4.jpg" alt="about">
+                            <img class="about-img2" src="./assets/imgs/about 3.jpg" alt="about">
+                            <img class="about-img3" src="./assets/imgs/about 5.jpg" alt="about">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="news">
+                <div class="container">
+                    <div class="title-block">
+                        <h2>Новости</h2>
+                        <a href="#"><button class="btn">Все новости</button></a>
+                    </div>
+                    <div class="news-wrapper">
+                        <div class="news-card">
+                            <a href="#" class="news-card-img">
+                                <img src="./assets/imgs/news1.jpg" alt="news">
+                            </a>
+                            <div class="news-date">
+                                <img src="./assets/icons/dateVector.png" alt="">
+                                <span>10 февраля 2024</span>
+                            </div>
+                            <a href="#"><h3>Проведение лыжной гонки “Лыжня России - 2024”</h3></a>
+                            <a href="#"> <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</p></a>
+                            <a href="#" class="btn read-btn">Читать полностью 
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="news-card">
+                            <a href="#" class="news-card-img">
+                                <img src="./assets/imgs/news2.jpg" alt="news">
+                            </a>
+                            <div class="news-date">
+                                <img src="./assets/icons/dateVector.png" alt="">
+                                <span>8 февраля 2024</span>
+                            </div>
+                            <a href="#"><h3>День российской науки в колледже</h3></a>
+                            <a href="#"><p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты</p></a>
+                            <a href="#" class="btn read-btn">Читать полностью 
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="news-card">
+                            <a href="#" class="news-card-img">
+                                <img src="./assets/imgs/news3.jpg" alt="news">
+                            </a>
+                            <div class="news-date">
+                                <img src="./assets/icons/dateVector.png" alt="">
+                                <span>18 января 2024</span>
+                            </div>
+                            <a href="#"><h3>Цикл занятий “Россия — мои горизонты”</h3></a>
+                            <a href="#"><p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты </p></a>
+                            <a href="#" class="btn read-btn">Читать полностью 
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="resources"> 
+                <div class="container">
+                    <h2>Полезные ресурсы</h2>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a class="resource-card" href="#">
+                                    <img src="./assets/imgs/resource1.jpg" alt="resource1">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="resource-card" href="#">
+                                    <img src="./assets/imgs/resource2.jpg" alt="resource2">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a class="resource-card" href="#">
+                                    <img src="./assets/imgs/resource1.jpg" alt="resource1">
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="services" >
+                <div class="container" >
+                    <div class="service-content" style="background-image: url('./assets/imgs/блок\ Госуслуги.jpg');">
+                        <h4>Есть предложения?</h4>
+                        <p>Знаете, как сделать колледж лучше или организовать учебные процессы?</p>
+                        <a href="#">
+                            <a href="/contact-form.html" class="btn read-btn">Сообщить о проблеме
+                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#FAFAFA"/>
+                                </svg>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="articles">
+                <div class="container">
+                    <div class="title-block">
+                        <h2>Статьи</h2>
+                        <a href="#">
+                            <button class="btn">Все статьи</button> 
+                        </a>
+                    </div>
+                    <div class="articles-wrapper">
+                        <a class="article-card" href="#">
+                            <h5>Направления деятельности профсоюза</h5>
+                            <div class="article-img">
+                                <img src="./assets/imgs/article1.jpg" alt="article">
+                            </div>
+                        </a>
+                        <a class="article-card" href="#">
+                            <h5>Информационные материалы по курсу банковского дела</h5>
+                            <div class="article-img">
+                                <img src="./assets/imgs/article2.jpg" alt="article">
+                            </div>
+                        </a>
+                        <a class="article-card" href="#">
+                            <h5>Спортивные дисциплины студклуба “Лидер”</h5>
+                            <div class="article-img">
+                                <img src="./assets/imgs/article3.jpg" alt="article">
+                            </div>
+                        </a>
+                        <a class="article-card" href="#">
+                            <h5>Как совмещать хобби, учебу и работу?</h5>
+                            <div class="article-img">
+                                <img src="./assets/imgs/article4.jpg" alt="article">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <a class="logo" href="/">
+                        <img src="./assets/icons/logo.png" alt="logo">
+                        <p><span>ГБПОУ НСО</span> Чулымский аграрный колледж</p>
+                    </a>
+                    <nav class="nav-menu">
+                        <h5>Пункты меню</h5>
+                        <ul>
+                            <li><a href="">О колледже</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/management.html">Руководство</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Сведения об организации</a></li>
+                            <li><a href="">Пресс-центр</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Статьи</a></li>
+                                    <li><a href="#">Вопрос-Ответ</a></li>
+                                    <li><a href="#">Фотогалерея</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Абитуриентам</a></li>
+                            <li><a href="">Студентам</a></li>
+                            <li><a href="">Преподавателям</a></li>
+                            <li><a href="/contact-form.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <h5>Контакты колледжа</h5>
+                        <ul class="contacts">
+                            <li><a href="">Россия, г. Чулым,ул. Мелиораторов, 20</a></li>
+                            <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                            <li><a class="mail" href="mailto:info@mail.com">info@mail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <ul class="socials">
+                        <li><a href="">
+                            <img src="./assets/icons/vk bl.png" alt="vk">  
+                        </a></li>
+                        <li><a href="">
+                            <img src="./assets/icons/telegram bl.png" alt="tg">
+                        </a></li>
+                        <li><a href="">
+                            <img src="./assets/icons/whatsapp bl.png" alt="wh">
+                        </a></li>
+                    </ul>
+                    <span class="copyright">
+                        © 2024 ГБПОУ НСО “Чулымский аграрный колледж”
+                    </span>
+
+                    <a href="" class="development">
+                        <p>Создание сайтов <span>Продвижение сайтов</span></p>
+                        <img src="./assets/icons/Kontur-SVG 1.png" alt="Kontur">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

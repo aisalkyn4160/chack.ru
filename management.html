@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1230">
+    <title>chak.ru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="layout">
+        <header class="header scroll">
+            <div class="container">
+                <a class="logo" href="/">
+                    <img src="./assets/icons/logo.png" alt="logo">
+                    <p><span>ГБПОУ НСО</span> Чулымский аграрный колледж</p>
+                </a>
+                <div class="header-info">   
+                    <div class="header-top">
+                        <form class="search-form">
+                            <button>
+                                <img src="./assets/icons/search-vector.png" alt="search">
+                            </button>
+                            <input type="text" placeholder="Поиск по сайту">
+                        </form>
+                        <ul class="contacts">
+                            <li><a href="">Чулым, ул. Мелиораторов, 20</a></li>
+                            <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                            <li><a class="mail" href="mailto:info@mail.com">info@mail.com</a></li>
+                        </ul>
+                        <ul class="socials">
+                            <li><a href="">
+                                <img src="./assets/icons/vk.png" alt="vk">  
+                                <img src="./assets/icons/vk bl.png" alt="vk">
+                            </a></li>
+                            <li><a href="">
+                                <img src="./assets/icons/telegram.png" alt="tg">
+                                <img src="./assets/icons/telegram bl.png" alt="tg">
+                            </a></li>
+                            <li><a href="">
+                                <img src="./assets/icons/whatsapp.png" alt="wh">
+                                <img src="./assets/icons/whatsapp bl.png" alt="wh">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="header-bottom">
+                        <nav class="nav-menu">
+                            <ul>
+                                <li><a href="#">О колледже</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/management.html">Руководство</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Сведения об организации</a></li>
+                                <li><a href="#">Пресс-центр</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Статьи</a></li>
+                                        <li><a href="#">Вопрос-Ответ</a></li>
+                                        <li><a href="#">Фотогалерея</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Абитуриентам</a></li>
+                                <li><a href="#">Студентам</a></li>
+                                <li>
+                                    <div class="burger-menu">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Преподавателям </a></li>
+                                            <li><a href="/contact-form.html">Контакты</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                        <button class="green-btn">Версия для слабовидящих</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="management">
+                <div class="container">
+                    <nav class="breadcrumb">
+                        <ul>
+                            <li><a href="/index.html">Главная</a></li>
+                            <li>></li>
+                            <li class="active"><a href="">Преподаватели</a></li>
+                        </ul>
+                    </nav>
+                    <div class="title-block">
+                        <h2>Руководство</h2>
+                        <a href="/teachers.html">
+                            <button class="btn">Все преподаватели</button>
+                        </a>
+                    </div>
+                    <div class="managers-wrapper">
+                        <div class="manager-card">
+                            <div class="manager-img">
+                                <img src="./assets/imgs/management1.jpg" alt="manager">
+                            </div>
+                            <div class="manager-info">
+                                <h3><span>Директор</span>Бочкарев Сергей Тимофеевич</h3>
+                                <ul>
+                                    <li>Пн-Пт с 9 до 18 (каб. 101)</li>
+                                    <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                                    <li><a href="mailto:info@mail.com">info@mail.com</a></li>
+                                </ul>
+
+                                <a href="/teacher1.html">
+                                    <button class="btn read-btn">Смотреть полностью
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="manager-card">
+                            <div class="manager-img">
+                                <img src="./assets/imgs/management2.png" alt="manager">
+                            </div>
+                            <div class="manager-info">
+                                <h3><span>Замдиректора</span>Сборщик Владимир Владимирович</h3>
+                                <ul>
+                                    <li>Пн-Пт с 9 до 18 (каб. 101)</li>
+                                    <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                                    <li><a href="mailto:info@mail.com">info@mail.com</a></li>
+                                </ul>
+
+                                <a href="">
+                                    <button class="btn read-btn">Смотреть полностью
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="manager-card">
+                            <div class="manager-img">
+                                <img src="./assets/imgs/management1.jpg" alt="manager">
+                            </div>
+                            <div class="manager-info">
+                                <h3><span>Директор</span>Бочкарев Сергей Тимофеевич</h3>
+                                <ul>
+                                    <li>Пн-Пт с 9 до 18 (каб. 101)</li>
+                                    <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                                    <li><a href="mailto:info@mail.com">info@mail.com</a></li>
+                                </ul>
+
+                                <a href="">
+                                    <button class="btn read-btn">Смотреть полностью
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="manager-card">
+                            <div class="manager-img">
+                                <img src="./assets/imgs/management2.png" alt="manager">
+                            </div>
+                            <div class="manager-info">
+                                <h3><span>Замдиректора</span>Сборщик Владимир Владимирович</h3>
+                                <ul>
+                                    <li>Пн-Пт с 9 до 18 (каб. 101)</li>
+                                    <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                                    <li><a href="mailto:info@mail.com">info@mail.com</a></li>
+                                </ul>
+
+                                <a href="">
+                                    <button class="btn read-btn">Смотреть полностью
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13 0.999999C13 0.447714 12.5523 -1.14869e-06 12 -1.40157e-06L3 -6.00782e-07C2.44772 -9.37957e-07 2 0.447715 2 0.999999C2 1.55228 2.44772 2 3 2L11 2L11 10C11 10.5523 11.4477 11 12 11C12.5523 11 13 10.5523 13 10L13 0.999999ZM1.70711 12.7071L12.7071 1.70711L11.2929 0.292892L0.292893 11.2929L1.70711 12.7071Z" fill="#3E3B39"/>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <a class="logo" href="/">
+                        <img src="./assets/icons/logo.png" alt="logo">
+                        <p><span>ГБПОУ НСО</span> Чулымский аграрный колледж</p>
+                    </a>
+                    <nav class="nav-menu">
+                        <h5>Пункты меню</h5>
+                        <ul>
+                            <li><a href="">О колледже</a></li>
+                            <li><a href="">Сведения об организации</a></li>
+                            <li><a href="">Пресс-центр</a></li>
+                            <li><a href="">Абитуриентам</a></li>
+                            <li><a href="">Студентам</a></li>
+                            <li><a href="">Преподавателям</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div>
+                        <h5>Контакты колледжа</h5>
+                        <ul class="contacts">
+                            <li><a href="">Россия, г. Чулым,ул. Мелиораторов, 20</a></li>
+                            <li><a href="tel:+83831234567">8 (383) 123-45-67</a></li>
+                            <li><a class="mail" href="mailto:info@mail.com">info@mail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <ul class="socials">
+                        <li><a href="">
+                            <img src="./assets/icons/vk bl.png" alt="vk">  
+                        </a></li>
+                        <li><a href="">
+                            <img src="./assets/icons/telegram bl.png" alt="tg">
+                        </a></li>
+                        <li><a href="">
+                            <img src="./assets/icons/whatsapp bl.png" alt="wh">
+                        </a></li>
+                    </ul>
+                    <span class="copyright">
+                        © 2024 ГБПОУ НСО “Чулымский аграрный колледж”
+                    </span>
+
+                    <a href="" class="development">
+                        <p>Создание сайтов <span>Продвижение сайтов</span></p>
+                        <img src="./assets/icons/Kontur-SVG 1.png" alt="Kontur">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
