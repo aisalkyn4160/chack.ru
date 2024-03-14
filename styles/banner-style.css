@@ -3,6 +3,9 @@
     background-size: cover;
     background-position: center;
     padding: 235px 0 175px;
+    position: relative;
+    top: -148px;
+    left: 0;
 }
 .banner-info{
     width: max-content;

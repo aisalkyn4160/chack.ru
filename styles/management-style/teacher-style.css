@@ -1,5 +1,5 @@
 .teacher{
-    padding: 200px 0 80px;
+    padding: 50px 0 80px;
 }
 
 .teacher-block{
@@ -60,7 +60,7 @@
     background: rgba(62, 59, 57, 0.5);
     display: flex;
     justify-content: center;
-    padding-top: 170px;
+    align-items: center;
     overflow: hidden;
 }
 

@@ -1,14 +1,3 @@
-// ---------------------------------------Шапка при скролле------------------------------------------------
-const header = document.querySelector('.header');
-const headerHeight = header.clientHeight;
-
-document.onscroll = function(){
-  let scrollY = window.scrollY;
-  if(scrollY > headerHeight){
-    header.classList.add('scroll');
-  } 
-}
-
 // ---------------------------------------------Слайдер ---------------------------------------------------
 const swiper = new Swiper('.swiper', {
   loop: true,
