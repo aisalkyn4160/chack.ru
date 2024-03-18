@@ -4,14 +4,20 @@
 .teachers-wrapper{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
+    gap: 10px;
 }
 .teacher-card{
-    height: 400px;
+    transition: all 0.5s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+.teacher-card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .teacher-img{
-    height: 326px;
+    /* height: 326px; */
     width: 100%;
+    height: calc(100% /1.5);
     margin-bottom: 20px;
 }
 
@@ -21,7 +27,46 @@
     object-fit: cover;
     border-radius: 10px;
 }
-
-.teacher-card h5:hover{
+.teacher-card h5{
+    margin-bottom: 0;
+}
+.teacher-card:hover h5{
     color: rgba(244, 171, 30, 1)
+}
+
+@media (max-width: 1150px){
+    .teacher-card{
+        min-width: 138px;
+    }
+    .teachers-wrapper{
+        gap: 10px;
+    }
+}
+@media (max-width: 765px){
+    .teachers-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media (max-width: 620px){
+    .breadcrumb ul{
+        gap: 4px;
+        
+    }
+    .teachers{
+        padding: 40px 0 60px;
+    }
+    .teachers-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teacher-card{
+        padding: 5px 10px 0px;
+    }
+    .teacher-img{
+        margin-bottom: 10px;
+    }
+    .teacher-card h5{
+        line-height: 20px;
+    }
+    
 }

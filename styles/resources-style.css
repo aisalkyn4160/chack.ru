@@ -49,7 +49,50 @@
    width: 17px;
    height: 15px;
    background-image: url(../assets/icons/nextArrow.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
 }
 .swiper-button-prev:after{
     background-image: url(../assets/icons/prevArrow.png);
+}
+
+@media (max-width:620px) {
+    .resources{
+        padding: 40px 0 20px;
+    }
+    .swiper-button-prev{
+        left: 400px;
+    }
+    .swiper-button-next{
+        left: 480px;
+    }
+    .resources .container{
+        padding-bottom: 65px;
+    }
+    .resources .swiper-button-prev,
+    .resources .swiper-button-next{
+        top: auto;
+        bottom: 0px;
+        width: 44px;
+        height: 44px;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+        width: 14px;
+        height: 13px;
+    }
+    .swiper-button-prev{
+        left:10px;
+    }
+    .swiper-button-next{
+        left: 70px;
+    }
+
+    .resources h2{
+        margin-bottom: 20px;
+    }
+    .resource-card{
+        height: 116px;
+    }
 }

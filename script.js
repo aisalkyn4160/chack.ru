@@ -1,3 +1,18 @@
+// ------------------------------------------header--------------------------------------
+const header = document.querySelector('.header');
+const burgerMenu = document.querySelector('.burger-menu');
+
+// if(window.innerWidth <= 1150) {
+//   burgerMenu.addEventListener('click', () => {
+//     header.classList.toggle('mobile-header');
+//     document.body.classList.toggle('no-scroll');
+//   });
+// }
+
+burgerMenu.addEventListener('click', () => {
+      header.classList.toggle('mobile-header');
+      document.body.classList.toggle('no-scroll');
+  });
 // ---------------------------------------------Слайдер ---------------------------------------------------
 const swiper = new Swiper('.swiper', {
   loop: true,
@@ -11,6 +26,14 @@ const swiper = new Swiper('.swiper', {
     },
     slidesPerView: 2,
     spaceBetween: 30,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      450: {
+        slidesPerView: 2,
+      }
+    }
   });
 
   // -------------------------------Расписание---------------------------------------------------

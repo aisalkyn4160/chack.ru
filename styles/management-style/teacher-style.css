@@ -29,6 +29,7 @@
     color: rgba(244, 171, 30, 1);
     font-size: 25px;
     font-weight: 700;
+    text-transform: initial;
 }
 
 .teacher-block-info ul{
@@ -39,6 +40,9 @@
 }
 .teacher-block-info ul p{
     color: rgba(62, 59, 57, 0.7);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .teacher-block-info ul span{
     color: rgba(62, 59, 57, 1);
@@ -57,6 +61,7 @@
     z-index: 1000;
     width: 100%;
     height: 100%;
+    padding: 0 15px;
     background: rgba(62, 59, 57, 0.5);
     display: flex;
     justify-content: center;
@@ -65,8 +70,8 @@
 }
 
 .shedule-block{
-    width: 1200px;
-    height: 487px;
+    width: 90%;
+    /* height: 487px; */
     background: rgba(250, 250, 250, 1);
     padding: 40px;
     display: flex;
@@ -91,11 +96,12 @@
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 10px;
+    padding-right: 15px;
 }
 
 .shedule-block table td{
     border-top: 1px solid rgba(62, 59, 57, .3);
-    padding: 15px 0;
+    padding: 15px 15px 15px 0;
     vertical-align: top;
     color: rgba(62, 59, 57, 1);
     font-size: 20px;
@@ -103,4 +109,79 @@
 }
 .shedule-block table td span{
     display: block;
+}
+@media (max-width: 900px){
+   .shedule-block{
+        width: 100%;
+        padding: 20px;
+   }
+    .shedule-block h2{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .shedule-block table th{
+        font-size: 16px;
+    }
+    .shedule-block table td{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 750px){
+    .teacher{
+        padding-bottom: 20px;
+    }
+    .teacher .breadcrumb ul{
+        flex-wrap: wrap;
+    }
+    .teacher-block{
+        flex-direction: column;
+        position: relative;
+        padding-top: 100px;
+        gap: 20px;
+    }
+    .teacher-block-img{
+        width: 100%;
+        min-width: 0;
+    }
+    .teacher-block-info{
+        margin-top: 0px;
+        
+    }
+    .teacher-block h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+    }
+    .teacher-block h2 span{
+        font-size: 16px;
+    }
+    .teacher-block-info ul{
+        margin-top: 0;
+        gap: 10px;
+    }
+    .teacher-block-info .btn{
+        display: none;
+    }
+}
+
+@media (max-width: 650px){
+    .shedule-block h2{
+        font-size: 19px;
+    }
+    .shedule-block table th{
+        font-size: 8px;
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
+    .shedule-block table td{
+        font-size: 8px;
+        hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
 }

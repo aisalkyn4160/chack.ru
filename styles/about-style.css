@@ -38,3 +38,32 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+@media (max-width: 1100px) {
+    .about{
+        padding: 40px 0;
+    }
+    .about-wrapper{
+        flex-direction: column;
+    }
+    .about-info{
+        max-width: 100%;
+    }
+}
+@media (max-width: 620px) {
+    .about{
+        margin-top: -64px;
+    }
+    .about-info h2{
+        border-bottom: 2.5px solid rgba(244, 171, 30, 1)
+    }
+    .about-info p{
+        margin-top: 10px;
+    }
+    .about-info .btn{
+        margin-top: 20px;
+    }
+    .about-imgs{
+        grid-template-rows: 111px 111px;
+    }
+}
