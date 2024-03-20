@@ -1,18 +1,24 @@
 // ------------------------------------------header--------------------------------------
 const header = document.querySelector('.header');
 const burgerMenu = document.querySelector('.burger-menu');
+const burgerNavMenu = document.querySelector('.burger-nav-menu');
 
-// if(window.innerWidth <= 1150) {
-//   burgerMenu.addEventListener('click', () => {
-//     header.classList.toggle('mobile-header');
-//     document.body.classList.toggle('no-scroll');
-//   });
-// }
+if(window.innerWidth <= 1150) {
+  burgerMenu.addEventListener('click', () => {
+    header.classList.toggle('mobile-header');
+    document.body.classList.toggle('no-scroll');
+  });  
+};
 
-burgerMenu.addEventListener('click', () => {
-      header.classList.toggle('mobile-header');
-      document.body.classList.toggle('no-scroll');
+if(window.innerWidth > 1150) {
+  burgerMenu.addEventListener('click', () => {
+    burgerNavMenu.classList.toggle('active');
   });
+ 
+}
+
+
+
 // ---------------------------------------------Слайдер ---------------------------------------------------
 const swiper = new Swiper('.swiper', {
   loop: true,
@@ -37,7 +43,7 @@ const swiper = new Swiper('.swiper', {
   });
 
   // -------------------------------Расписание---------------------------------------------------
-  const openSheduleBtn = document.getElementById('open-shedule');
+  const openSheduleBtn = document.querySelector('.open-shedule');
   const shedule = document.querySelector('.shedule');
   const closeSheduleBtn = document.querySelector('.x-btn');
 

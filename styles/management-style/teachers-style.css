@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+   
 }
 .teacher-card{
     transition: all 0.5s ease;
@@ -15,9 +16,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .teacher-img{
-    /* height: 326px; */
     width: 100%;
-    height: calc(100% /1.5);
+    aspect-ratio: 1/1.5;
     margin-bottom: 20px;
 }
 
@@ -42,7 +42,7 @@
         gap: 10px;
     }
 }
-@media (max-width: 765px){
+@media (max-width: 910px){
     .teachers-wrapper{
         grid-template-columns: repeat(3, 1fr);
     }
