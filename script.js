@@ -63,6 +63,26 @@ const swiper = new Swiper('.swiper', {
     }
   })
 
+const table = document.querySelector(".shedule-table");
+
+let hasData = false;
+const rows = table.getElementsByTagName("tr");
+for (let i = 0; i < rows.length; i++) {
+  const cells = rows[i].getElementsByTagName("td");
+  for (let j = 0; j < cells.length; j++) {
+    if (cells[j].textContent.trim() !== "") {
+      hasData = true;
+      break;
+    }
+  }
+  if (hasData) {
+    break;
+  }
+}
+
+if (!hasData) {
+  table.parentNode.parentNode.remove();
+}
   //------------------------------------------teacher-info--------------------------------------------
   const teacherInfoList = document.querySelectorAll('.teacher-block-info ul li p span');
 
