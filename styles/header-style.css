@@ -190,14 +190,14 @@
     transform: rotate(0deg);
 }
 .header.mobile-header .nav-menu  .dropdown-arrow::after{
-    content: '\276F';
+    content: '\2515';
     display: inline-block;
     margin-left: 10px;
     font-size: 15px;
-    transform: rotate(90deg);
+    transform: rotate(-45deg);
     position: absolute;
-    top: 0px;
-    color: rgba(62, 59, 57, 0.5);
+    top: 2px;
+    color: rgba(62, 59, 57, 1);
 }
 .header.mobile-header .nav-menu .dropdown-menu{
     position: static;
