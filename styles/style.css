@@ -278,6 +278,7 @@ footer{
 		height: 10px;
 		margin-left: 4px;
 	}
-
-	
+	.nav-menu > ul > li:hover >a{
+		opacity: 1;
+	}
 }
