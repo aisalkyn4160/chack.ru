@@ -17,8 +17,20 @@ if(window.innerWidth > 1150) {
  
 }
 
+const navMenuLi = document.querySelectorAll('.nav-menu-li');
 
+  navMenuLi.forEach((el) => {
+    const navMenuLink = el.querySelector('a');
+    const dropdownMenu = el.querySelector('.dropdown-menu');
 
+    if(dropdownMenu){
+      navMenuLink.innerHTML += '<span class="dropdown-arrow"></span>';
+    };
+    navMenuLink.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('drop');
+      
+    })
+  })
 // ---------------------------------------------Слайдер ---------------------------------------------------
 const swiper = new Swiper('.swiper', {
   loop: true,
