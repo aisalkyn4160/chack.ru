@@ -95,6 +95,7 @@ for (let i = 0; i < rows.length; i++) {
 if (!hasData) {
   table.parentNode.parentNode.remove();
 }
+
   //------------------------------------------teacher-info--------------------------------------------
   const teacherInfoList = document.querySelectorAll('.teacher-block-info ul li p span');
 

@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .shedule-block{
@@ -191,10 +191,34 @@
 
 }
 
-@media (max-width: 420px) {
-    .shedule-block table th,
-    .shedule-block table td{
-        font-size: 5px;
+@media (max-width: 550px) {
+    .shedule{
+        overflow-y: scroll;
+        align-items: flex-start;
+        padding: 50px 15px;
+    }
+    .shedule-table thead{
+        display: none;
+    }
+    .shedule-table tr{
+        margin-bottom: 10px;
+    }
+    .shedule-table tr,
+    .shedule-table td{
+        display: block;
+        border: 1px solid rgba(62, 59, 57, 0.15);
+        text-align: right;
     }
 
+    .shedule-table td::before{
+        content: attr(data-label);
+        float: left;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .shedule-table td[data-label="Дата"]{
+        background-color: rgba(62, 59, 57, 0.15);
+    }
+    
 }
