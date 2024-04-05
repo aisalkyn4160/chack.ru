@@ -152,7 +152,6 @@ header{
 }
 .dropdown-menu{
 	display: none;
-	width: 185px;
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -280,5 +279,8 @@ footer{
 	}
 	.nav-menu > ul > li:hover >a{
 		opacity: 1;
+	}
+	.dropdown-menu{
+		white-space: initial;
 	}
 }

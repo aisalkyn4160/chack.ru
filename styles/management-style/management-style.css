@@ -64,7 +64,15 @@
     fill: rgba(244, 171, 30, 1);
     transition: all 0.5s ease;
 }
-
+@media (max-width: 1400px) {
+    .container{
+        max-width: 970px;
+    }
+    .managers-wrapper{
+        grid-template-columns: 100%;
+    }
+    
+}
 @media (max-width: 1150px) {
     .managers-wrapper{
         grid-template-columns: 100%;

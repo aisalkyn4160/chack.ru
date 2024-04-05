@@ -2,20 +2,16 @@
 const header = document.querySelector('.header');
 const burgerMenu = document.querySelector('.burger-menu');
 const burgerNavMenu = document.querySelector('.burger-nav-menu');
+const mobileBurger = document.querySelector('.mobile-burger');
 
-if(window.innerWidth <= 1150) {
-  burgerMenu.addEventListener('click', () => {
-    header.classList.toggle('mobile-header');
-    document.body.classList.toggle('no-scroll');
-  });  
-};
+burgerMenu.addEventListener('click', () => {
+  burgerNavMenu.classList.toggle('active');
+});
 
-if(window.innerWidth > 1150) {
-  burgerMenu.addEventListener('click', () => {
-    burgerNavMenu.classList.toggle('active');
-  });
- 
-}
+mobileBurger.addEventListener('click', () => {
+  header.classList.toggle('mobile-header');
+  document.body.classList.toggle('no-scroll');
+});  
 
 const navMenuLi = document.querySelectorAll('.nav-menu-li');
 
